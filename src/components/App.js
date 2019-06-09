@@ -74,7 +74,6 @@ class App extends Component {
           search_photos: response.data.photos.photo,
           loading: false
         });
-        return this.state.search_photos;
       })
       .catch(error => {
         console.log('Error fetching and parsing data', error);
