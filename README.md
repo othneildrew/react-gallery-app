@@ -116,7 +116,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Othneil Drew - [LinkedIn](https://linkedin.com/in/othneildrew) - codeguydrew@gmail.com
 
-Project Link: [https://github.com/othneildrew/Express-Portfolio](https://github.com/othneildrew/Express-Portfolio)
+Project Link: [https://github.com/othneildrew/react-gallery-app](https://github.com/othneildrew/react-gallery-app)
 
 
 
