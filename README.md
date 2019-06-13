@@ -1,68 +1,130 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<!-- PROJECT SHIELDS -->
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/othneildrew/react-gallery-app">
+    <img src="./public/gag-reel-logo-sq.png" alt="Logo" width="80" height="80">
+  </a>
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+  <h3 align="center">The GAG Reel</h3>
 
-### `npm test`
+  <p align="center">
+    A fun gallery app created with React and the Flickr API
+    <br />
+    <a href="https://github.com/othneildrew/react-gallery-app/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/othneildrew/react-gallery-app/issues">Request Feature</a>
+  </p>
+</p>
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+* [Changes Made](#changes-made)
+* [Contributing](#contributing)
+* [License](#license)
+* [Contact](#contact)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[![The GAG Reel][product-screenshot]](https://github.com/othneildrew/react-gallery-app)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The GAG Reel is a simple photo gallery app focused on showcasing guns, airplanes, and guitars. However, you can search millions of images available using the Flickr API. This project is part of [Treehouse's Full Stack JavaScript Techdegree](https://join.teamtreehouse.com/full-stack-javascript-techdegree). The project uses React and the Flickr API.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Built With
 
-## Learn More
+* [Flickr API](https://www.flickr.com/services/api)
+* [React](https://reactjs.org)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+<!-- GETTING STARTED -->
+## Getting Started
 
-### Analyzing the Bundle Size
+To get a local copy of the project up and running, follow these simple steps:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+1. Obtain a Flickr API Key from [https://www.flickr.com/services/apps/create/apply](https://www.flickr.com/services/apps/create/apply)
+2. Clone the repo
+```sh
+git clone https:://github.com/othneildrew/react-gallery-app.git
+```
+3. Install Node packages
+```sh
+npm install
+```
+4. Add API key to `config.js` file
+```sh
+const apiKey = 'your_api_key_here';
+export default apiKey;
+```
+5. Move to project folder & start node server
+```sh
+npm start
+```
+6. Enjoy, it's that simple! :smile:
 
-### Making a Progressive Web App
+_For information regarding the Flickr API visit: [https://www.flickr.com/services/api](https://www.flickr.com/services/api)_
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+<!-- CHANGES MADE -->
+## Changes Made
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+* Wrote all JavaScript and React functionality
+* Created logos
+* Changed background and text colors
 
-### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Othneil Drew - [LinkedIn](https://linkedin.com/in/othneildrew) - codeguydrew@gmail.com
+
+Project Link: [https://github.com/othneildrew/Express-Portfolio](https://github.com/othneildrew/Express-Portfolio)
+
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+[license-url]: https://choosealicense.com/licenses/mit
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: ./public/project-screenshot.png
