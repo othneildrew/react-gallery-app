@@ -5,8 +5,8 @@ import NotFound from './NotFound';
 
 const Gallery = ({ data, isLoading }) => {
   let photos;
-  // console.log(match.params.q);
-  if (typeof data === 'object' && data.length > 0) {
+  
+  if (Array.isArray(data) && data.length > 0) {
     photos = data.map((photo, index) => (
       <GalleryItem
         key={index}
@@ -30,6 +30,7 @@ const Gallery = ({ data, isLoading }) => {
 }
 
 Gallery.propTypes = {
+  data: PropTypes.array,
   isloading: PropTypes.bool
 };
 

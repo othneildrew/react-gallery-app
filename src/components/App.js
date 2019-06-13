@@ -4,6 +4,7 @@ import apiKey from '../config.js';
 import SearchForm from './SearchForm';
 import Nav from './Nav';
 import Gallery from './Gallery';
+import NotFound from './NotFound';
 
 const axios = require('axios');
 const image_limit = 24;
@@ -67,7 +68,7 @@ class App extends Component {
 
   handleSearch = (query) => {
     const self = this; // helps maintain lexical scope
-    console.log(query);
+    
     this.requestImages(query)
       .then(response => {
         self.setState({
@@ -123,7 +124,7 @@ class App extends Component {
                 data={this.state.search_photos} />}
               />
 
-              <Route component={Gallery} />
+              <Route component={NotFound} />
             </Switch>
           </div>
       </BrowserRouter>
