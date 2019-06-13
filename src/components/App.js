@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import apiKey from '../config.js';
 import SearchForm from './SearchForm';
 import Nav from './Nav';
+import Logo from './Logo';
 import Gallery from './Gallery';
 import NotFound from './NotFound';
 
@@ -68,6 +69,10 @@ class App extends Component {
 
   handleSearch = (query) => {
     const self = this; // helps maintain lexical scope
+
+    this.setState({
+      loading: true
+    });
     
     this.requestImages(query)
       .then(response => {
@@ -85,6 +90,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="container">
+          <Logo />
+
           <SearchForm search={this.handleSearch} />
           <Nav />
 

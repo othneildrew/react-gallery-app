@@ -1,7 +1,8 @@
 body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: #3f4850;
+  background-color: #1c2833;
+  color: #ffffff;
 }
 
 h2 {
@@ -19,6 +20,12 @@ a {
   text-decoration: none;
 }
 
+.logo {
+  padding-bottom: 15px;
+  width: 400px;
+  height: auto;
+}
+
 .search-form {
   max-width: 460px;
   display: flex;
@@ -27,7 +34,7 @@ a {
 
 .search-form button {
   outline: none;
-  background-color: #438bbd;
+  background-color: #c70039;
   border: none;
   padding: 0px 15px;
   border-radius: 0 0.35em 0.35em 0;
@@ -52,7 +59,7 @@ input {
 
 .main-nav a {
   display: block;
-  background: #438bbd;
+  background: #c70039;
   border-radius: 3px;
   padding: 5px;
   color: #fff;
@@ -61,7 +68,7 @@ input {
 .main-nav .active,
 .main-nav a:hover,
 .search-form button:hover {
-  background-color: #275270;
+  background-color: #91032b;
 }
 
 .photo-container ul {
@@ -89,8 +96,18 @@ input {
   transform: scale(1.65);
 }
 
-.photo-container .not-found {
+.photo-container .not-found,
+.photo-container .loader {
   width: 100%;
+}
+
+.photo-container .not-found h3 {
+  color: #c70039;
+}
+
+.photo-container .loader-text {
+  color: #c70039;
+  font-size: 2.4em;
 }
 
 @media only screen and (max-width: 767px)  {

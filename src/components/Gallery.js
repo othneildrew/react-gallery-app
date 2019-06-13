@@ -1,29 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import GalleryItem from './GalleryItem';
+import Loader from './Loader';
 import NotFound from './NotFound';
 
 const Gallery = ({ data, isLoading }) => {
-  let photos;
-  
-  if (Array.isArray(data) && data.length > 0) {
-    photos = data.map((photo, index) => (
-      <GalleryItem
-        key={index}
-        url={`https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`}
-        title={photo.title}
-      />
-    ));
-  } else if (!isLoading) {
-    // Assign Not Found list item if no photos are provided and application loading state is false
-    photos = <NotFound />;
-  }
+  let results;
 
+  if (isLoading) {
+
+    results = <Loader />;
+    
+  } else {
+    
+    if (Array.isArray(data) && data.length > 0) {
+      results = data.map((photo, index) => (
+        <GalleryItem
+          key={index}
+          url={`https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`}
+          title={photo.title}
+        />
+      ));
+    } else if (!isLoading) {
+      // Assign Not Found list item if no photos are provided
+      results = <NotFound />;
+    }
+  }
+  
   return (
     <div className="photo-container">
       <h2>Results</h2>
       <ul>
-        {photos}
+        {results}
       </ul>
     </div>
   );
